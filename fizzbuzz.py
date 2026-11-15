@@ -3,6 +3,8 @@
 # la respuesta correcta.
 
 def fizzbuzz(num):
+    if num == 0:
+        return "FizzBuzz"
     if num % 3 == 0:
             return "Fizz"
     if num % 5 == 0:
@@ -17,6 +19,6 @@ def fizzbuzz(num):
 #if se cumple y la función retorna "Fizz" de inmediato, 
 #sin llegar nunca a la condición de FizzBuzz.
 
-print(fizzbuzz(-15))
+print(fizzbuzz(0))
 
 
